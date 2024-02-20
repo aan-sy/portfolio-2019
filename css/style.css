@@ -1,0 +1,153 @@
+:root {
+  /* APP COLOR */
+  --color-main: var(--color-yellow);
+
+  /* COLOR */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-yellow: #ffcc00;
+}
+
+/* COMMON */
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  padding: 1.3rem;
+}
+
+/* Logo */
+.logo__svg .part {
+  fill: none;
+  stroke: var(--color-black);
+  stroke-width: 22;
+  animation: handleDashOffset 1s ease-in-out .1s forwards;
+}
+
+.logo__svg .part1 {
+  stroke-dasharray: 146; 
+  stroke-dashoffset: 146;
+}
+
+.logo__svg .part2 {
+  stroke-dasharray: 161;
+  stroke-dashoffset: 161;
+}
+
+.logo__svg .part2--cover {
+  fill: var(--color-main);
+}
+
+.logo__svg .part3 {
+  stroke-dasharray: 146;
+  stroke-dashoffset: 146;
+}
+
+.logo__svg .part4 {
+  stroke-dasharray: 118;
+  stroke-dashoffset: 118;
+}
+
+@keyframes handleDashOffset {
+  100% {stroke-dashoffset: 0;}
+}
+
+/* Animation */
+.anim-darker {
+  opacity: 0;
+  animation: darker 1.3s ease 1s forwards;
+}
+
+@keyframes darker {
+  100% {opacity: 1;}
+}
+
+.anim-showUp {
+  opacity: 0;
+  animation: showUp .3s ease 1s forwards;
+}
+
+@keyframes showUp {
+  0% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Home */
+.home {
+  position: relative;
+  background-color: var(--color-main);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home__logo {
+  width: 6rem;
+  z-index: 1;
+}
+
+.home__description {
+  display: block;
+  text-align: right;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  z-index: 1;
+}
+
+.home__description:nth-child(2) {
+  animation-delay: 1.2s;
+}
+
+.home__description:nth-child(3) {
+  animation-delay: 1.3s;
+}
+
+.home__description--strong {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.home__player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home__player__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55%;
+  height: 90%;
+  background: url(../assets/images/icons/play.svg) no-repeat center;
+}
+
+.home__player__timeline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 10px;
+  width: 100%;
+  background-color: rgba(0,0,0,.3);
+}
+
+.home__player__playhead {
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-black);
+  border-radius: 50%;
+}
+

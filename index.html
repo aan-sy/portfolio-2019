@@ -13,7 +13,12 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="" />
   <meta property="og:image" content="" />
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- CSS -->
+  <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
   <!-- JS -->
   <script defer type="module" src="./src/main.js"></script>
@@ -21,28 +26,31 @@
 <body>
   <main>
     <!-- HOME -->
-    <section id="home">
-      <h1>
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          viewBox="0 0 149 153" style="enable-background:new 0 0 149 153;" xml:space="preserve">
-              <title>a logo</title>
-              <path class="st0" d="M83.21,85.65"/>
-              <polyline class="st1 rect4" points="149,142 90,142 90,83 "/>
-              <path class="st1 rect1" d="M51,73V31.25c0-11.05-8.95-20-20-20h0c-11.05,0-20,8.95-20,20V73"/>
-              <path class="st1 rect3" d="M51,153v-41.75c0-11.05-8.95-20-20-20h0c-11.05,0-20,8.95-20,20V153"/>
-              <polyline class="st1 rect2" points="138.35,77 108.32,2 78.28,77 "/>
-              <rect x="62.06" y="73" class="st2" width="39.15" height="8.43"/>
-              <rect x="109.85" y="73" class="st2" width="39.15" height="8.43"/>
-              <rect x="88.74" class="st2" width="39.15" height="4"/>
+    <section id="home" class="home">
+      <h1 class="home__logo">
+        <svg class="logo__svg" viewBox="0 0 149 153">
+            <title>logo</title>
+            <path class="part part1" d="M51,73V31.25c0-11.05-8.95-20-20-20h0c-11.05,0-20,8.95-20,20V73"/>
+            <polyline class="part part2" points="138.35,77 108.32,2 78.28,77" stroke-linejoin="bevel"/>
+            <rect class="part2--cover" x="62.06" y="73"  width="39.15" height="8.43"/>
+            <rect class="part2--cover" x="109.85" y="73"  width="39.15" height="8.43"/>
+            <path class="part part3" d="M51,153v-41.75c0-11.05-8.95-20-20-20h0c-11.05,0-20,8.95-20,20V153"/>            
+            <polyline class="part part4" points="149,142 90,142 90,83 "/>
           </svg>
-          <p>I am Lee So yeon, <br> <span>Web Publisher</span> <br> I'am actively seeking my position</p>
-          <article>
-            <div>
-              <button aria-label="audio play-pause"></button>
-              <div class="timeline"><div class="playhead"></div></div>
-            </div>
-          </article>
       </h1>
+      <p>
+        <span class="home__description anim-showUp">I am Lee So yeon,</span>
+        <span class="home__description home__description--strong anim-showUp">Web Publisher</span> 
+        <span class="home__description anim-showUp">I'am actively seeking my position</span>
+      </p>
+      <article class="home__player">
+        <div>
+          <button class="home__player__btn anim-darker" aria-label="audio play-pause"></button>
+          <div class="home__player__timeline anim-darker">
+            <div class="home__player__playhead"></div>
+          </div>
+        </div>
+      </article>
     </section>
     <!-- MESSAGE -->
     <section id="message">
