@@ -1,6 +1,22 @@
+:root {
+  --timing-smooth: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+/* Draw */
+.anim-draw {
+  animation: draw 1s ease-in-out 0.1s forwards;
+}
+
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Darker */
 .anim-darker {
   opacity: 0;
-  animation: darker 1.3s ease 1s forwards;
+  animation: darker 1.3s var(--timing-smooth) 1s forwards;
 }
 
 @keyframes darker {
@@ -9,12 +25,13 @@
   }
 }
 
-.anim-showUp {
+/* ShowUp Y */
+.anim-showUpY {
   opacity: 0;
-  animation: showUp 0.3s ease 1s forwards;
+  animation: showUpY 0.3s var(--timing-smooth) 1s forwards;
 }
 
-@keyframes showUp {
+@keyframes showUpY {
   0% {
     transform: translateY(100%);
   }
@@ -24,6 +41,24 @@
     transform: translateY(0);
   }
 }
+
+/* ShowUp X */
+.anim-showUpX {
+  opacity: 0;
+  animation: showUpX 0.7s var(--timing-smooth) 1s forwards;
+}
+
+@keyframes showUpX {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 
 /* Home */
 .home__description:nth-child(2) {
@@ -38,45 +73,102 @@
 .message__word:nth-child(1) {
   animation-delay: 0.1s;
 }
+
 .message__word:nth-child(2) {
   animation-delay: 0.15s;
 }
+
 .message__word:nth-child(3) {
   animation-delay: 0.2s;
 }
+
 .message__word:nth-child(4) {
   animation-delay: 0.25s;
 }
+
 .message__word:nth-child(5) {
   animation-delay: 0.3s;
 }
+
 .message__word:nth-child(6) {
   animation-delay: 0.35s;
 }
+
 .message__word:nth-child(7) {
   animation-delay: 0.4s;
 }
+
 .message__word:nth-child(8) {
   animation-delay: 0.45s;
 }
+
 .message__word:nth-child(9) {
   animation-delay: 0.5s;
 }
+
 .message__word:nth-child(10) {
   animation-delay: 0.55s;
 }
+
 .message__word:nth-child(11) {
   animation-delay: 0.6s;
 }
+
 .message__word:nth-child(12) {
   animation-delay: 0.65s;
 }
+
 .message__word:nth-child(13) {
   animation-delay: 0.7s;
 }
+
 .message__word:nth-child(14) {
   animation-delay: 0.75s;
 }
+
 .message__word:nth-child(15) {
   animation-delay: 0.8s;
+}
+
+/* About */
+.about__title__word:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.about__title__word:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.about__icon .icon {
+  animation-duration: 0.6s;
+  animation-delay: 0.7s;
+}
+
+.about__subtitle {
+  animation-duration: 1s;
+  animation-delay: 1.2s;
+}
+
+.about__list {
+  animation-duration: 1s;
+}
+
+.about__list:nth-child(2) {
+  animation-delay: 1.3s;
+}
+
+.about__list:nth-child(3) {
+  animation-delay: 1.4s;
+}
+
+.about__list:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+.about__list:nth-child(5) {
+  animation-delay: 1.6s;
+}
+
+.about__list:nth-child(6) {
+  animation-delay: 1.7s;
 }

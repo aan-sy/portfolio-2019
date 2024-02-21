@@ -30,5 +30,5 @@ button {
 a {
   color: #000;
   text-decoration: none;
-  display: inline-block;
+  display: block;
 }
