@@ -4,7 +4,8 @@ h2,
 h3,
 p,
 dl,
-dd {
+dd,
+figure {
   margin: 0;
 }
 

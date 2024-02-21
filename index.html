@@ -25,13 +25,12 @@
   <script defer type="module" src="./src/main.js"></script>
 </head>
 <body>
-  <main>
+  <main>  
     <!-- HOME -->
-    <section id="home" class="home section-container">
+    <section id="home" class="home section-container" tabindex="0" aria-label="home">
       <h1 class="home__logo" aria-label="logo">
         <a href="">
           <svg class="logo__svg" viewBox="0 0 149 153">
-            <title>logo</title>
             <path class="part part1 anim-draw" d="M51,73V31.25c0-11.05-8.95-20-20-20h0c-11.05,0-20,8.95-20,20V73"/>
             <polyline class="part part2 anim-draw" points="138.35,77 108.32,2 78.28,77" stroke-linejoin="bevel"/>
             <rect class="part2--cover" x="62.06" y="73"  width="39.15" height="8.43"/>
@@ -55,8 +54,9 @@
         </div>
       </article>
     </section>
+
     <!-- MESSAGE -->
-    <section id="message" class="message section-container">
+    <section id="message" class="message section-container" tabindex="0" aria-label="introduction">
       <p class="message__description">
         <span class="message__word anim-showUpY fw-500">I'm</span>
         <span class="message__word anim-showUpY italic">interested</span>
@@ -75,19 +75,19 @@
         <span class="message__word anim-showUpY italic">ideas.</span>
       </p>
     </section>
+
     <!-- ABOUT -->
-    <section id="about" class="about section-container">
-      <h2 class="section-title" aria-label="about">
+    <section id="about" class="about section-container" tabindex="0" aria-label="About me">
+      <h2 class="section-title">
         <span class="section-title-word anim-showUpX" aria-hidden="true">ABO</span>
         <span class="section-title-word anim-showUpX" aria-hidden="true">UT</span>
         <svg class="section-icon" viewBox="0 0 680 659.96" aria-hidden="true">
-          <title>a curved line</title>
           <path class="icon anim-draw" fill="none" stroke="#000" d="M569.24,0c0,284.64-175.69,549.27-569.24,549.27"/>
         </svg>
       </h2>
       <section class="about__content">
         <div class="about__content__box">
-          <h3 class="about__subtitle anim-showUpY">Me</h3>
+          <h3 class="about__subtitle anim-showUpY" aria-hidden="true">Me</h3>
           <dl class="about__list anim-showUpY">
             <dt class="about__list__title">name</dt>
             <dd>Lee So yeon</dd>
@@ -111,8 +111,9 @@
         </div>
       </section>
     </section>
+
     <!-- SKILLS -->
-    <section id="skills" class="skills" aria-label="skills list">
+    <section id="skills" class="skills" tabindex="0" aria-label="Skills list">
       <ul class="skills__titles">
         <li class="skills__title anim-showUpY" aria-label="HTML">HTML</li>
         <li class="skills__title anim-showUpY" aria-label="CSS">CSS</li>
@@ -126,76 +127,120 @@
         <li class="skills__score anim-pitAPat">8</li>
       </ul>
     </section>
+
     <!-- WORK -->
-    <section id="work section-container">
-      <h2><span>How to</span><span>make</span><span>it</span></h2>
+    <section id="work" class="work" tabindex="0" aria-label="Project list">
+      <h2 class="section-title section-container">
+        <span class="section-title-word anim-showUpX">How to</span>
+        <span class="section-title-word anim-showUpX">make</span>
+        <span class="section-title-word anim-showUpX">it</span>
+        <svg class="section-icon" viewBox="0 0 680 659.96" aria-hidden="true">
+          <path class="icon anim-draw" fill="none" stroke="#000" d="M569.24,0c0,284.64-175.69,549.27-569.24,549.27"/>
+        </svg>
+      </h2>
+      <div class="work__contents">
+        <figure class="work__content">
+          <img class="work__content__img" src="./assets/images/works/megabox-mobile.png" alt="megabox site mockup">
+          <figcaption>
+            <h3 class="work__content__title">megabox mobile</h3>
+            <dl class="work__stack">
+              <dt class="work__stack__title">HTML</dt>
+              <dd>HTML5, ARIA, SVG</dd>
+            </dl>
+            <dl class="work__stack">
+              <dt class="work__stack__title">CSS</dt>
+              <dd>Responsive</dd>
+            </dl>
+            <dl class="work__stack">
+              <dt class="work__stack__title">Javascript</dt>
+              <dd>Tab menu</dd>
+            </dl>
+            <dl class="work__stack">
+              <dt class="work__stack__title">Library</dt>
+              <dd>slick</dd>
+            </dl>
+            <a href="javascript:vodid(0)" class="work__content__btn">visite site</a>
+          </figcaption>
+        </figure>
 
-      <section>
-        <img src="./assets/images/works/megabox-mobile.png" alt="clone megabox site">
-        <h3>megabox mobile</h3>
-        <dl>
-          <dt>HTML</dt>
-          <dd>HTML5, ARIA, SVG</dd>
-          <dt>CSS</dt>
-          <dd>Responsive, Bootstap 4</dd>
-          <dt>Javascript</dt>
-          <dd>Tab menu</dd>
-          <dt>Library</dt>
-          <dd>jQuery 3, slick</dd>
-        </dl>
-        <a href="">visite site</a>
-      </section>
+        <figure class="work__content">
+          <img class="work__content__img" src="./assets/images/works/megabox-pc.png" alt="megabox site mockup">
+          <figcaption>
+            <h3 class="work__content__title">megabox</h3>
+            <dl class="work__stack">
+              <dt class="work__stack__title">HTML</dt>
+              <dd>HTML5, ARIA, SVG</dd>
+            </dl>
+            <dl class="work__stack">
+              <dt class="work__stack__title">CSS</dt>
+              <dd>Responsive</dd>
+            </dl>
+            <dl class="work__stack">
+              <dt class="work__stack__title">Javascript</dt>
+              <dd>Tab menu</dd>
+            </dl>
+            <dl class="work__stack">
+              <dt class="work__stack__title">Library</dt>
+              <dd>Slick</dd>
+            </dl>
+            <dl class="work__stack">
+              <dt class="work__stack__title">Photoshop</dt>
+              <dd>Redesign</dd>
+            </dl>
+            <a href="javascript:vodid(0)" class="work__content__btn">visite site</a>
+          </figcaption>
+        </figure>
 
-      <section>
-        <img src="./assets/images/works/megabox-pc.png" alt="clone megabox site">
-        <h3>megabox</h3>
-        <dl>
-          <dt>HTML</dt>
-          <dd>HTML5, ARIA, SVG</dd>
-          <dt>CSS</dt>
-          <dd>Responsive, Font-awsome</dd>
-          <dt>Javascript</dt>
-          <dd>Tab menu</dd>
-          <dt>Library</dt>
-          <dd>jQuery 3, Modenizr, Swiper</dd>
-          <dt>photoshop</dt>
-          <dd>redesign</dd>
-        </dl>
-        <a href="">visite site</a>
-      </section>
+        <figure class="work__content">
+          <img class="work__content__img" src="./assets/images/works/responsive.png" alt="responsive site mockup">
+          <figcaption>
+            <h3 class="work__content__title">Responsive Web</h3>
+            <dl class="work__stack">
+              <dt class="work__stack__title">HTML</dt>
+              <dd>HTML5, ARIA</dd>
+            </dl>
+            <dl class="work__stack">
+              <dt class="work__stack__title">CSS</dt>
+              <dd>Responsive</dd>
+            </dl>
+            <dl class="work__stack">
+              <dt class="work__stack__title">Javascript</dt>
+              <dd>Window Popup</dd>
+            </dl>
+            <dl class="work__stack">
+              <dt class="work__stack__title">Library</dt>
+              <dd>Slick</dd>
+            </dl>
+            <a href="javascript:vodid(0)" class="work__content__btn">visite site</a>
+          </figcaption>
+        </figure>
 
-      <section>
-        <img src="./assets/images/works/responsive.png" alt="responsive site">
-        <h3>Responsive Web</h3>
-        <dl>
-          <dt>HTML</dt>
-          <dd>HTML5, ARIA</dd>
-          <dt>CSS</dt>
-          <dd>Responsive</dd>
-          <dt>Javascript</dt>
-          <dd>Window Popup, Modenizr</dd>
-          <dt>Library</dt>
-          <dd>jQuery 3, Slick, lightgallery</dd>
-        </dl>
-        <a href="">visite site</a>
-      </section>
-
-      <section>
-        <img src="./assets/images/works/standard.png" alt="web standard site">
-        <h3>Web Standard</h3>
-        <dl>
-          <dt>HTML</dt>
-          <dd>HTML5, ARIA</dd>
-          <dt>CSS</dt>
-          <dd>Image Replacement</dd>
-          <dt>Javascript</dt>
-          <dd>Tab menu, Popup</dd>
-          <dt>Library</dt>
-          <dd>jQuery 3, Slick</dd>
-        </dl>
-        <a href="">visite site</a>
-      </section>
+        <figure class="work__content">
+          <img class="work__content__img" src="./assets/images/works/standard.png" alt="web standard site mockup">
+          <figcaption>
+            <h3 class="work__content__title">Web Standard</h3>
+            <dl class="work__stack">
+              <dt class="work__stack__title">HTML</dt>
+              <dd>HTML5, ARIA</dd>
+            </dl>
+            <dl class="work__stack">
+              <dt class="work__stack__title">CSS</dt>
+              <dd>Image Replacement</dd>
+            </dl>
+            <dl class="work__stack">
+              <dt class="work__stack__title">Javascript</dt>
+              <dd>Tab menu, Popup</dd>
+            </dl>
+            <dl class="work__stack">
+              <dt class="work__stack__title">Library</dt>
+              <dd>Slick</dd>
+            </dl>
+            <a href="javascript:vodid(0)" class="work__content__btn">visite site</a>
+          </figcaption>
+        </figure>
+      </div>
     </section>
+
     <!-- PHRASE -->
     <section id="phrase section-container">
       <ul>
