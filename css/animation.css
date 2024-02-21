@@ -59,6 +59,47 @@
   }
 }
 
+/* Pit a Pat */
+.section-title::after {
+  opacity: 0;
+  animation: pitAPat 0.6s var(--timing-smooth) 0.6s forwards;
+}
+
+.anim-pitAPat {
+  opacity: 0;
+  animation: pitAPat 0.6s var(--timing-smooth) 0.6s forwards;
+}
+
+@keyframes pitAPat {
+  0% {
+    opacity: 1;
+    transform: scale(0.5);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Common */
+.section-title-word:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.section-title-word:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.section-icon .icon {
+  animation-duration: 0.6s;
+  animation-delay: 0.7s;
+}
 
 /* Home */
 .home__description:nth-child(2) {
@@ -131,19 +172,6 @@
 }
 
 /* About */
-.about__title__word:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.about__title__word:nth-child(2) {
-  animation-delay: 0.1s;
-}
-
-.about__icon .icon {
-  animation-duration: 0.6s;
-  animation-delay: 0.7s;
-}
-
 .about__subtitle {
   animation-duration: 1s;
   animation-delay: 1.2s;
@@ -171,4 +199,25 @@
 
 .about__list:nth-child(6) {
   animation-delay: 1.7s;
+}
+
+/* Skills */
+.skills__title {
+  animation-duration: 1s;
+}
+
+.skills__title:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.skills__title:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.skills__title:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.skills__title:nth-child(4) {
+  animation-delay: 0.6s;
 }

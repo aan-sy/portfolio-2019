@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- SEO -->
-  <title>Portfolio for Web Publisher Soyeon</title>
+  <title>Portfolio</title>
   <meta name="description" content="Portfolio for Web Publisher Soyeon">
   <meta name="author" content="Lee Soyeon">
   <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
@@ -28,7 +28,7 @@
   <main>
     <!-- HOME -->
     <section id="home" class="home section-container">
-      <h1 class="home__logo">
+      <h1 class="home__logo" aria-label="logo">
         <a href="">
           <svg class="logo__svg" viewBox="0 0 149 153">
             <title>logo</title>
@@ -77,10 +77,10 @@
     </section>
     <!-- ABOUT -->
     <section id="about" class="about section-container">
-      <h2 class="about__title">
-        <span class="about__title__word anim-showUpX">ABO</span>
-        <span class="about__title__word anim-showUpX">UT</span>
-        <svg class="about__icon" viewBox="0 0 680 659.96" aria-hidden="true">
+      <h2 class="section-title" aria-label="about">
+        <span class="section-title-word anim-showUpX" aria-hidden="true">ABO</span>
+        <span class="section-title-word anim-showUpX" aria-hidden="true">UT</span>
+        <svg class="section-icon" viewBox="0 0 680 659.96" aria-hidden="true">
           <title>a curved line</title>
           <path class="icon anim-draw" fill="none" stroke="#000" d="M569.24,0c0,284.64-175.69,549.27-569.24,549.27"/>
         </svg>
@@ -112,22 +112,19 @@
       </section>
     </section>
     <!-- SKILLS -->
-    <section id="skills section-container">
-      <h2>skills</h2>
-      <section>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Phtoshop</li>
-        </ul>
-        <ul>
-          <li>8</li>
-          <li>7</li>
-          <li>5</li>
-          <li>8</li>
-        </ul>
-      </section>
+    <section id="skills" class="skills" aria-label="skills list">
+      <ul class="skills__titles">
+        <li class="skills__title anim-showUpY" aria-label="HTML">HTML</li>
+        <li class="skills__title anim-showUpY" aria-label="CSS">CSS</li>
+        <li class="skills__title anim-showUpY" aria-label="JavaScript">JavaScript</li>
+        <li class="skills__title anim-showUpY" aria-label="Photoshop">Photoshop</li>
+      </ul>
+      <ul class="skills__scores" aria-hidden="true">
+        <li class="skills__score anim-pitAPat">8</li>
+        <li class="skills__score anim-pitAPat">7</li>
+        <li class="skills__score anim-pitAPat">5</li>
+        <li class="skills__score anim-pitAPat">8</li>
+      </ul>
     </section>
     <!-- WORK -->
     <section id="work section-container">
