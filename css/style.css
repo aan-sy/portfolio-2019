@@ -287,6 +287,10 @@ body {
 }
 
 /* Work */
+.work {
+  overflow: hidden;
+}
+
 .work .section-title::after {
   top: 2rem;
   right: 2rem;
@@ -403,6 +407,35 @@ body {
   transition-property: background;
   transition-duration: 0.3s;
   transition-timing-function: ease;
+}
+
+/* Copy */
+.copy {
+  background-color: var(--color-main);
+}
+
+.copy__item {
+  border-bottom: 1px solid var(--color-black);
+  font-size: 7vw;
+  font-weight: 300;
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  padding: 0.6em 0;
+}
+
+.copy__item:last-child {
+  border-bottom: 0;
+}
+
+.copy__word::after {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 2px;
+  background-color: var(--color-black);
+  transform: translate(0.1em, -0.34em);
 }
 
 @media (hover: hover) {
