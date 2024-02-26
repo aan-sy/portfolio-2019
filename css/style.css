@@ -18,7 +18,10 @@
 }
 
 /* COMMON */
-body, button, input, textarea {
+body,
+button,
+input,
+textarea {
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
 }
@@ -107,7 +110,7 @@ body, button, input, textarea {
   z-index: 1;
 }
 
-.home__description {
+.home__copy {
   display: block;
   text-align: right;
   font-size: 1.5rem;
@@ -117,7 +120,7 @@ body, button, input, textarea {
   z-index: 1;
 }
 
-.home__description--strong {
+.home__copy--strong {
   font-size: 2rem;
   font-weight: 600;
 }
@@ -130,14 +133,28 @@ body, button, input, textarea {
   height: 100%;
 }
 
-.home__player__btn {
+.home__player__button {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 45%;
-  height: 85%;
+  height: 70%;
   background: url(../assets/images/icons/play.svg) no-repeat center / contain;
+}
+
+.home__player__muted {
+  position: fixed;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 2vw;
+  padding: 0.5em;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition-property: opacity, visibility;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
 }
 
 .home__player__timeline {
@@ -148,6 +165,7 @@ body, button, input, textarea {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 3;
+  cursor: pointer;
 }
 
 .home__player__playhead {
@@ -517,7 +535,7 @@ body, button, input, textarea {
   transition: all 0.3s ease;
 }
 
-.others__list__item.active .ohers__toggle__icon .col{
+.others__list__item.active .ohers__toggle__icon .col {
   transform: translateY(-50%) rotate(90deg);
 }
 
@@ -560,7 +578,7 @@ body, button, input, textarea {
 }
 
 .contact__content__wrapper {
-  width: 40vw;  
+  width: 40vw;
   margin-bottom: 3em;
   display: flex;
   flex-direction: column;
@@ -634,10 +652,8 @@ body, button, input, textarea {
 }
 
 .footer .logo__svg .part2--cover {
-  fill: var(--color-purple)
+  fill: var(--color-purple);
 }
-
-
 
 @media (hover: hover) {
   .work__content__btn:hover {
@@ -672,9 +688,15 @@ body, button, input, textarea {
     font-size: 1.3rem;
   }
 
-  .home__player__btn {
+  .home__player__button {
     width: 65%;
     height: 65%;
+  }
+
+  .home__player__muted {
+    font-size: 5vw;
+    top: 0.5rem;
+    right: 0.5rem;
   }
 
   /* Message */
@@ -823,7 +845,7 @@ body, button, input, textarea {
   .contact__form__item {
     font-size: 3.7vw;
   }
-  
+
   .contact__form__textarea {
     height: 40vw;
   }
@@ -837,5 +859,4 @@ body, button, input, textarea {
     width: 100vw;
     padding: 20vw;
   }
-
 }
