@@ -180,8 +180,8 @@ textarea {
   padding: 4rem;
 }
 
-.message__description {
-  font-size: 8vw;
+.message__copy {
+  font-size: 6.5vw;
   line-height: 1.3;
   text-transform: uppercase;
   font-weight: 200;
@@ -816,6 +816,7 @@ textarea {
 
   .others__subtitle {
     font-size: 7vw;
+    line-height: 1.2;
     padding-bottom: 1em;
   }
 
@@ -829,7 +830,7 @@ textarea {
 
   .others__animation__wrapper {
     width: 100%;
-    height: 50vw;
+    height: 70vw;
   }
 
   /* Contact */

@@ -7,6 +7,10 @@
   animation: draw 1s ease-in-out 0.1s forwards;
 }
 
+.anim .section-title-icon .icon {
+  animation: draw 1s ease-in-out 0.1s forwards;
+}
+
 @keyframes draw {
   100% {
     stroke-dashoffset: 0;
@@ -19,32 +23,31 @@
   animation: darker 1.3s var(--timing-smooth) 1s forwards;
 }
 
+.others__animation__wrapper {
+  opacity: 0;
+}
+
+.anim .others__animation__wrapper {
+  animation: darker 1.3s var(--timing-smooth) 1s forwards;
+}
+
 @keyframes darker {
   100% {
     opacity: 1;
   }
 }
 
-/* ShowUp Y */
-.anim-showUpY {
-  opacity: 0;
-  animation: showUpY 0.3s var(--timing-smooth) 1s forwards;
-}
-
-@keyframes showUpY {
-  0% {
-    transform: translateY(100%);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* ShowUp X */
 .anim-showUpX {
   opacity: 0;
+  animation: showUpX 0.7s var(--timing-smooth) 1s forwards;
+}
+
+.section-title-word {
+  opacity: 0;
+}
+
+.anim .section-title-word {
   animation: showUpX 0.7s var(--timing-smooth) 1s forwards;
 }
 
@@ -59,15 +62,99 @@
   }
 }
 
+/* ShowUp Y */
+.anim-showUpY {
+  opacity: 0;
+  animation: showUpY 0.3s var(--timing-smooth) 1s forwards;
+}
+
+.message__word {
+  opacity: 0;
+}
+
+.anim .message__word {
+  animation: showUpY 0.3s var(--timing-smooth) 1s forwards;
+}
+
+.about__subtitle,
+.about__list {
+  opacity: 0;
+}
+
+.anim .about__subtitle,
+.anim .about__list {
+  animation: showUpY 0.3s var(--timing-smooth) 1s forwards;
+}
+
+.skills__title {
+  opacity: 0;
+}
+
+.anim .skills__title {
+  animation: showUpY 0.3s var(--timing-smooth) 1s forwards;
+}
+
+.work__content__num,
+.work__content__wrapper {
+  opacity: 0;
+}
+
+.work__content.anim .work__content__num,
+.work__content.anim .work__content__wrapper {
+  animation: showUpY 0.3s var(--timing-smooth) 1s forwards;
+}
+
+.others__subtitle,
+.others__list__item {
+  opacity: 0;
+}
+
+.anim .others__subtitle,
+.anim .others__list__item {
+  animation: showUpY 0.3s var(--timing-smooth) 1s forwards;
+}
+
+.contact__info,
+.contact__form__item {
+  opacity: 0;
+}
+
+.anim .contact__info,
+.anim .contact__form__item {
+  animation: showUpY 0.3s var(--timing-smooth) 1s forwards;
+}
+
+@keyframes showUpY {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Pit a Pat */
-.section-title::after {
+.anim-pitAPat {
   opacity: 0;
   animation: pitAPat 0.6s var(--timing-smooth) 0.6s forwards;
 }
 
-.anim-pitAPat {
+.section-title::after {
   opacity: 0;
+}
+
+.anim .section-title::after {
   animation: pitAPat 0.6s var(--timing-smooth) 0.6s forwards;
+}
+
+.skills__score {
+  opacity: 0;
+}
+
+.anim .skills__score {
+  animation: pitAPat 0.6s var(--timing-smooth) 0.3s forwards;
 }
 
 @keyframes pitAPat {
@@ -88,19 +175,19 @@
 }
 
 /* Common */
-.section-title-word:nth-child(1) {
+.anim .section-title-word:nth-child(1) {
   animation-delay: 0s;
 }
 
-.section-title-word:nth-child(2) {
+.anim .section-title-word:nth-child(2) {
   animation-delay: 0.1s;
 }
 
-.section-title-word:nth-child(3) {
+.anim .section-title-word:nth-child(3) {
   animation-delay: 0.2s;
 }
 
-.section-title-icon .icon {
+.anim .section-title-icon .icon {
   animation-duration: 0.6s;
   animation-delay: 0.7s;
 }
@@ -115,124 +202,124 @@
 }
 
 /* Message */
-.message__word:nth-child(1) {
+.anim .message__word:nth-child(1) {
   animation-delay: 0.1s;
 }
 
-.message__word:nth-child(2) {
+.anim .message__word:nth-child(2) {
   animation-delay: 0.15s;
 }
 
-.message__word:nth-child(3) {
+.anim .message__word:nth-child(3) {
   animation-delay: 0.2s;
 }
 
-.message__word:nth-child(4) {
+.anim .message__word:nth-child(4) {
   animation-delay: 0.25s;
 }
 
-.message__word:nth-child(5) {
+.anim .message__word:nth-child(5) {
   animation-delay: 0.3s;
 }
 
-.message__word:nth-child(6) {
+.anim .message__word:nth-child(6) {
   animation-delay: 0.35s;
 }
 
-.message__word:nth-child(7) {
+.anim .message__word:nth-child(7) {
   animation-delay: 0.4s;
 }
 
-.message__word:nth-child(8) {
+.anim .message__word:nth-child(8) {
   animation-delay: 0.45s;
 }
 
-.message__word:nth-child(9) {
+.anim .message__word:nth-child(9) {
   animation-delay: 0.5s;
 }
 
-.message__word:nth-child(10) {
+.anim .message__word:nth-child(10) {
   animation-delay: 0.55s;
 }
 
-.message__word:nth-child(11) {
+.anim .message__word:nth-child(11) {
   animation-delay: 0.6s;
 }
 
-.message__word:nth-child(12) {
+.anim .message__word:nth-child(12) {
   animation-delay: 0.65s;
 }
 
-.message__word:nth-child(13) {
+.anim .message__word:nth-child(13) {
   animation-delay: 0.7s;
 }
 
-.message__word:nth-child(14) {
+.anim .message__word:nth-child(14) {
   animation-delay: 0.75s;
 }
 
-.message__word:nth-child(15) {
+.anim .message__word:nth-child(15) {
   animation-delay: 0.8s;
 }
 
 /* About */
-.about__subtitle {
+.anim .about__subtitle {
   animation-duration: 1s;
+  animation-delay: 1s;
+}
+
+.anim .about__list {
+  animation-duration: 1s;
+}
+
+.anim .about__list:nth-child(2) {
+  animation-delay: 1.1s;
+}
+
+.anim .about__list:nth-child(3) {
   animation-delay: 1.2s;
 }
 
-.about__list {
-  animation-duration: 1s;
-}
-
-.about__list:nth-child(2) {
+.anim .about__list:nth-child(4) {
   animation-delay: 1.3s;
 }
 
-.about__list:nth-child(3) {
+.anim .about__list:nth-child(5) {
   animation-delay: 1.4s;
 }
 
-.about__list:nth-child(4) {
+.anim .about__list:nth-child(6) {
   animation-delay: 1.5s;
 }
 
-.about__list:nth-child(5) {
-  animation-delay: 1.6s;
-}
-
-.about__list:nth-child(6) {
-  animation-delay: 1.7s;
-}
-
 /* Skills */
-.skills__title {
-  animation-duration: 1s;
+.anim .skills__title {
+  animation-duration: 0.5s;
 }
 
-.skills__title:nth-child(1) {
-  animation-delay: 0s;
+.anim .skills__title:nth-child(1) {
+  animation-delay: 0.5s;
 }
 
-.skills__title:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.skills__title:nth-child(3) {
-  animation-delay: 0.4s;
-}
-
-.skills__title:nth-child(4) {
+.anim .skills__title:nth-child(2) {
   animation-delay: 0.6s;
 }
 
+.anim .skills__title:nth-child(3) {
+  animation-delay: 0.7s;
+}
+
+.anim .skills__title:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
 /* Work */
-.work__content__wrapper {
+.work__content.anim .work__content__wrapper {
   animation-duration: 1.2s;
   animation-delay: 0s;
 }
 
-.work__content__num {
+.work__content.anim .work__content__num {
   animation-duration: 1s;
   animation-delay: 0s;
 }
