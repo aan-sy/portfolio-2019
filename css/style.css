@@ -49,7 +49,7 @@ body {
   display: block;
 }
 
-.section-icon {
+.section-title-icon {
   width: 2.2em;
   height: 2.1em;
   stroke: var(--color-black);
@@ -201,7 +201,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-top: 2em;
   font-size: 1.8vw;
 }
 
@@ -438,6 +437,106 @@ body {
   transform: translate(0.1em, -0.34em);
 }
 
+/* Others */
+.others {
+  background-color: var(--color-sub);
+}
+
+.others__content {
+  width: 100%;
+  margin-bottom: 3em;
+  display: flex;
+  color: var(--color-white);
+}
+
+.others__list__wrapper {
+  width: 50%;
+}
+
+.others__subtitle {
+  font-size: 6vw;
+  font-weight: 300;
+  line-height: 1;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid var(--color-white);
+}
+
+.others__list__item {
+  padding: 2em 0;
+  border-bottom: 1px solid var(--color-white);
+}
+
+.others__toggle__button {
+  position: relative;
+  color: var(--color-white);
+  font-size: 3vw;
+  font-weight: 200;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ohers__toggle__icon .col {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: calc(0.5em - 1px);
+  transform: translateY(-50%);
+  display: block;
+  width: 2px;
+  height: 1em;
+  background-color: var(--color-white);
+  transition: transform 0.3s ease;
+}
+
+.ohers__toggle__icon .row {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: block;
+  width: 1em;
+  height: 2px;
+  background-color: var(--color-white);
+}
+
+.others__toggle__content {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  margin-top: 0;
+  transition: all 0.3s ease;
+}
+
+.others__list__item.active .ohers__toggle__icon .col{
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.others__list__item.active .others__toggle__content {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+  margin-top: 2em;
+}
+
+.others__animation__wrapper {
+  order: -1;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.others_animation {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.others_animation.active {
+  display: block;
+}
+
 @media (hover: hover) {
   .work__content__btn:hover {
     color: var(--color-white);
@@ -492,6 +591,7 @@ body {
   .about__content {
     align-items: start;
     font-size: 4vw;
+    margin-top: 2em;
   }
 
   .about__content__box {
@@ -574,5 +674,20 @@ body {
 
   .work__content__btn {
     font-size: 3.3vw;
+  }
+
+  /* Others */
+  .others__content {
+    flex-direction: column;
+    margin-bottom: 2em;
+  }
+
+  .others__list__wrapper {
+    width: 100%;
+  }
+
+  .others__animation__wrapper {
+    width: 100%;
+    height: 50vw;
   }
 }
