@@ -8,6 +8,8 @@
   --color-black: #000;
   --color-yellow: #ffcc00;
   --color-blue: #0099ff;
+  --color-purple: #660099;
+  --color-red: #ff3333;
   --color-gray: #f4f4f4;
 
   /* Icon */
@@ -415,6 +417,7 @@ body, button, input, textarea {
 /* Copy */
 .copy {
   background-color: var(--color-main);
+  overflow: hidden;
 }
 
 .copy__item {
@@ -596,6 +599,45 @@ body, button, input, textarea {
   color: var(--color-black);
   font-weight: 300;
 }
+
+/* Footer */
+.footer {
+  display: flex;
+}
+
+.footer__card {
+  width: 50vw;
+  padding: 10vw;
+}
+
+.footer__card:first-child {
+  background-color: var(--color-purple);
+}
+
+.footer__card:last-child {
+  background-color: var(--color-red);
+}
+
+.footer__button {
+  overflow: visible;
+  width: 100%;
+}
+
+.footer__arrow {
+  transition: transform 0.3s ease;
+  width: 100%;
+  overflow: visible;
+}
+
+.footer__card:last-child:hover .footer__arrow {
+  transform: rotate(-45deg);
+}
+
+.footer .logo__svg .part2--cover {
+  fill: var(--color-purple)
+}
+
+
 
 @media (hover: hover) {
   .work__content__btn:hover {
@@ -784,6 +826,16 @@ body, button, input, textarea {
   
   .contact__form__textarea {
     height: 40vw;
+  }
+
+  /* Footer */
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer__card {
+    width: 100vw;
+    padding: 20vw;
   }
 
 }

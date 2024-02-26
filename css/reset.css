@@ -34,7 +34,8 @@ a {
   display: block;
 }
 
-input, textarea {
+input,
+textarea {
   border: 0;
   padding: 0;
 }
