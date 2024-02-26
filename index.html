@@ -86,7 +86,7 @@
         </svg>
       </h2>
       <section class="about__content">
-        <div class="about__content__box">
+        <div class="about__content__wrapper">
           <h3 class="about__subtitle anim-showUpY" aria-hidden="true">Me</h3>
           <dl class="about__list anim-showUpY">
             <dt class="about__list__title">name</dt>
@@ -332,20 +332,33 @@
       </section>
     </section>
     <!-- CONTACT -->
-    <section id="contack section-container">
-      <h2><span>Cont</span><span>ac</span><span>t</span></h2>
-      <dl>
-        <dt>thank</dt>
-        <dd>your time and please contact me here</dd>
-        <dt>email</dt>
-        <dd>soylee57@gmail.com</dd>        
-      </dl>
-      <form action="">
-        <input type="text" placeholder="your name" name="name" />
-        <input type="text" placeholder="your email" name="email" />
-        <textarea name="message" placeholder="Message"></textarea>
-        <button>send</button>
-      </form>
+    <section id="contact" class="contact section-container">
+      <h2 class="section-title">
+        <span class="section-title-word anim-showUpX" aria-hidden="true">cont</span>
+        <span class="section-title-word anim-showUpX" aria-hidden="true">ac</span>
+        <span class="section-title-word anim-showUpX" aria-hidden="true">t</span>
+        <svg class="section-title-icon" viewBox="0 0 680 659.96" aria-hidden="true">
+          <path class="icon anim-draw" fill="none" stroke="#000" d="M569.24,0c0,284.64-175.69,549.27-569.24,549.27"/>
+        </svg>
+      </h2>
+      <section class="contact__content">
+        <div class="contact__content__wrapper">
+          <dl class="contact__info">
+            <dt>thank</dt>
+            <dd class="contact__info__copy">your time and please contact me here</dd>
+          </dl>
+          <dl class="contact__info">
+            <dt>email</dt>
+            <dd class="contact__info__copy">soylee57@gmail.com</dd>
+          </dl>
+          <form class="contact__form gform" method="post" data-email="soylee57@gmail.com" action="https://script.google.com/macros/s/AKfycbwbcjCLK3bcQXpsIPtV1mZ1hAQPTVec_PF-go5rwHW4ry36WKSnaaIWVSG9jsOEGwkT/exec">
+            <input class="contact__form__item" type="text" placeholder="your name" name="name" required />
+            <input class="contact__form__item" type="text" placeholder="your email" name="email" required />
+            <textarea class="contact__form__item contact__form__textarea" name="message" placeholder="Message" required></textarea>
+            <button class="contact__form__item contact__form__button">send</button>
+          </form>
+        </div>
+      </section>
     </section>
   </main>
   <footer id="footer">
