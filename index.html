@@ -24,9 +24,9 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/animation.css">
   <!-- JS -->
-  <script defer type="module" src="./src/main.js"></script>
   <script defer type="module" src="./src/audio.js"></script>
   <script defer type="module" src="./src/animation.js"></script>
+  <script defer type="module" src="./src/main.js"></script>
 </head>
 <body>
   <main>  
@@ -261,18 +261,28 @@
     <section id="copy" class="copy">
       <ul>
         <li class="copy__item">
-          <span class="copy__word">open</span> <span class="copy__word">minded person</span>
-          <span class="copy__word">open</span> <span class="copy__word">minded person</span>
+          <p class="copy__words">
+            <span class="copy__word">open</span> <span class="copy__word">minded person</span>
+            <span class="copy__word">open</span> <span class="copy__word">minded person</span>
+          </p>
         </li>
         <li class="copy__item">
-          <span class="copy__word">I never limit</span> <span class="copy__word">myself</span>
-          <span class="copy__word">I never limit</span> <span class="copy__word">myself</span>
+          <p class="copy__words">
+            <span class="copy__word">I never limit</span> <span class="copy__word">myself</span>
+            <span class="copy__word">I never limit</span> <span class="copy__word">myself</span>
+          </p>
         </li>
         <li class="copy__item">
-          <span class="copy__word">Contantly</span> <span class="copy__word">learning, growing</span>
+          <p class="copy__words">
+            <span class="copy__word">Contantly</span> <span class="copy__word">learning, growing</span>
+            <span class="copy__word">Contantly</span> <span class="copy__word">learning, growing</span>
+          </p>
         </li>
         <li class="copy__item">
-          <span class="copy__word">I like listening</span> <span class="copy__word">to music</span>
+          <p class="copy__words">
+            <span class="copy__word">I like listening</span> <span class="copy__word">to music</span>
+            <span class="copy__word">I like listening</span> <span class="copy__word">to music</span>
+          </p>
         </li>
       </ul>
     </section>
@@ -290,8 +300,8 @@
         <div class="others__list__wrapper">
           <h3 class="others__subtitle">animation <br />css</h3>
           <ul class="others__list">
-            <li class="others__list__item active" data-filter="planet">
-              <button class="others__toggle__button" aria-label="회전하는 행성 구현 코드 토글">
+            <li class="others__list__item" data-type="planet">
+              <button class="others__toggle__button" data-filter="planet" aria-label="회전하는 행성 구현 코드 토글">
                 rotating planet
                 <span class="ohers__toggle__icon">
                   <span class="row"></span>
@@ -308,8 +318,8 @@
                 <li>애니메이션 어떻게 구현되었는지 핵심 동작원리</li>
               </ul>
             </li>
-            <li class="others__list__item" data-filter="floating">
-              <button class="others__toggle__button" aria-label="이리저리 튕겨 움직이는 둥근 모양 구현 코드 토글">
+            <li class="others__list__item" data-type="floating">
+              <button class="others__toggle__button" data-filter="floating" aria-label="이리저리 튕겨 움직이는 둥근 모양 구현 코드 토글">
                 floating svg
                 <span class="ohers__toggle__icon">
                   <span class="row"></span>
@@ -330,8 +340,8 @@
           </ul>
         </div>
         <div class="others__animation__wrapper">
-          <iframe data-animation="planet" class="active others_animation" src="./assets/animation/planet.html" frameborder="0"></iframe>
-          <iframe data-animation="floating" class="others_animation" src="./assets/animation/floating.html" frameborder="0"></iframe>
+          <iframe data-type="planet" class="others_animation" src="./assets/animation/planet.html" frameborder="0"></iframe>
+          <iframe data-type="floating" class="others_animation" src="./assets/animation/floating.html" frameborder="0"></iframe>
         </div>
       </section>
     </section>
