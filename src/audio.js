@@ -16,11 +16,11 @@ const playMusic = () => {
   if(music.paused) {
     music.play();
     playButton.ariaLabel = 'audio pause';
-    playButton.style.background = `url('../assets/images/icons/pause.svg') no-repeat center / contain`;
+    playButton.style.background = `url('https://aan-sy.github.io/portfolio-2019/assets/images/icons/pause.svg') no-repeat center / contain`;
   } else {
     music.pause();
     playButton.ariaLabel = 'audio play';
-    playButton.style.background = `url('../assets/images/icons/play.svg') no-repeat center / contain`;
+    playButton.style.background = `url('https://aan-sy.github.io/portfolio-2019/assets/images/icons/play.svg') no-repeat center / contain`;
   }
 
   activeMutedButton();
