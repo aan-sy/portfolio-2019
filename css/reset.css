@@ -26,6 +26,7 @@ button {
   display: inline-block;
   outline: none;
   padding: 0;
+  color: #000;
 }
 
 a {
@@ -38,4 +39,9 @@ input,
 textarea {
   border: 0;
   padding: 0;
+}
+
+input:focus,
+textarea:focus {
+  ouline: 1px solid #000;
 }
