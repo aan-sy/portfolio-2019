@@ -645,7 +645,7 @@ textarea {
 .thankyou_message {
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.5);
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   text-align: center;
   padding-top: 2rem;
 }
@@ -712,11 +712,11 @@ textarea {
     width: 4.5rem;
   }
 
-  .home__description {
+  .home__copy {
     font-size: 1rem;
   }
 
-  .home__description--strong {
+  .home__copy--strong {
     font-size: 1.3rem;
   }
 
