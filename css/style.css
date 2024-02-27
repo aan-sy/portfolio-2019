@@ -267,6 +267,7 @@ textarea {
 
 .skills__title {
   margin-bottom: 0.5em;
+  cursor: default;
 }
 
 .skills__title:nth-child(1) {
@@ -301,7 +302,7 @@ textarea {
   font-weight: 600;
 }
 
-.skills__score:nth-child(1) {
+.skills__score.on {
   display: block;
 }
 
@@ -487,11 +488,11 @@ textarea {
   font-weight: 300;
   line-height: 1;
   padding-bottom: 0.5em;
-  border-bottom: 1px solid rgba(255,255,255,0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .others__toggle__wrapper {
-  border-bottom: 1px solid rgba(255,255,255,0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .others__toggle__button {
@@ -540,11 +541,11 @@ textarea {
   font-size: 1.3vw;
   font-weight: 200;
   padding: 1.5em 0;
-  border-bottom: 1px solid rgba(255,255,255,0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .others__copy:first-child {
-  border-top: 1px solid rgba(255,255,255,0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .others__copy:last-child {
@@ -851,8 +852,6 @@ textarea {
   .others__copy {
     font-size: 2.5vw;
   }
-
-
 
   /* Contact */
   .contact__content {

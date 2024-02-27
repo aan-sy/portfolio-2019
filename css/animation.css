@@ -153,6 +153,10 @@
   opacity: 0;
 }
 
+.skills__score.on {
+  animation: pitAPat 0.3s var(--timing-smooth) 0s forwards;
+}
+
 .anim .skills__score {
   animation: pitAPat 0.6s var(--timing-smooth) 0.3s forwards;
 }

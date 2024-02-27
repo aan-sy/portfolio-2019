@@ -1,4 +1,22 @@
-// 스크롤시 Copy section 가로로 움직이기
+// 마우스 오버 시 점수 나타내기
+const skills = document.querySelector('.skills__titles');
+
+const handleMouseOver = (e) => {
+  const skill = e.target.dataset.skill;
+  if(!skill) return;
+  const scores = document.querySelectorAll('.skills__score');
+  scores.forEach(score => {
+    if(score.dataset.type === skill) {
+      score.classList.add('on');
+    } else {
+      score.classList.remove('on');
+    }
+  })
+}
+
+skills.addEventListener('mouseover', handleMouseOver)
+
+// 스크롤시 텍스트 가로로 움직이기
 const copySection = document.querySelector('.copy');
 const copies = document.querySelectorAll('.copy__words');
 
