@@ -78,3 +78,7 @@ accordion.addEventListener('click', (e) => {
   animations.forEach(animation => toggleAccordion(animation))
   toggles.forEach(toggle => toggleAccordion(toggle))
 })
+
+// 상단으로 이동
+const goToTop = document.querySelector('.footer__button');
+goToTop.addEventListener('click', () => scrollTo(0, 0, 'smooth'))

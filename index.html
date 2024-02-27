@@ -17,8 +17,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/7c6ce2eb2a.js" crossorigin="anonymous"></script>
+  <!-- Google Email Script -->
+  <script defer src="./src/form-submit.js"></script>
   <!-- CSS -->
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
@@ -31,7 +34,7 @@
 <body>
   <main>  
     <!-- Home -->
-    <section id="home" class="home section-container" tabindex="0" aria-label="home">
+    <section id="home" class="home section-container" aria-label="home">
       <h1 class="home__logo" aria-label="logo">
         <a href="">
           <svg class="logo__svg" viewBox="0 0 149 153">
@@ -60,7 +63,7 @@
     </section>
 
     <!-- Message -->
-    <section id="message" class="message section-container" tabindex="0" aria-label="introduction">
+    <section id="message" class="message section-container" aria-label="introduction">
       <p class="message__copy">
         <span class="message__word fw-500">I'm</span>
         <span class="message__word italic">interested</span>
@@ -81,7 +84,7 @@
     </section>
 
     <!-- About -->
-    <section id="about" class="about section-container" tabindex="0" aria-label="About me">
+    <section id="about" class="about section-container" aria-label="About me">
       <h2 class="section-title">
         <span class="section-title-word" aria-hidden="true">ABO</span>
         <span class="section-title-word" aria-hidden="true">UT</span>
@@ -117,7 +120,7 @@
     </section>
 
     <!-- Skills -->
-    <section id="skills" class="skills" tabindex="0" aria-label="Skills list">
+    <section id="skills" class="skills" aria-label="Skills list">
       <ul class="skills__titles">
         <li class="skills__title" data-skill="html" aria-label="HTML">HTML</li>
         <li class="skills__title" data-skill="css" aria-label="CSS">CSS</li>
@@ -133,7 +136,7 @@
     </section>
 
     <!-- Work -->
-    <section id="work" class="work" tabindex="0" aria-label="Project list">
+    <section id="work" class="work" aria-label="Project list">
       <h2 class="section-title section-container">
         <span class="section-title-word">How to</span>
         <span class="section-title-word">make</span>
@@ -288,7 +291,7 @@
     </section>
 
     <!-- Others -->
-    <section id="others" class="others section-container" tabindex="0" aria-label="Others">
+    <section id="others" class="others section-container" aria-label="Others">
       <h2 class="section-title">
         <span class="section-title-word" aria-hidden="true">OTHE</span>
         <span class="section-title-word" aria-hidden="true">RS</span>
@@ -345,7 +348,7 @@
       </section>
     </section>
     <!-- CONTACT -->
-    <section id="contact" class="contact section-container" tabindex="0" aria-label="Contact Me">
+    <section id="contact" class="contact section-container" aria-label="Contact Me">
       <h2 class="section-title">
         <span class="section-title-word" aria-hidden="true">cont</span>
         <span class="section-title-word" aria-hidden="true">ac</span>
@@ -364,16 +367,18 @@
             <dt>email</dt>
             <dd class="contact__info__copy">soylee57@gmail.com</dd>
           </dl>
-          <form class="contact__form gform" method="post" data-email="soylee57@gmail.com" action="https://script.google.com/macros/s/AKfycbwbcjCLK3bcQXpsIPtV1mZ1hAQPTVec_PF-go5rwHW4ry36WKSnaaIWVSG9jsOEGwkT/exec">
+          <form class="contact__form gform" method="post" action="https://script.google.com/macros/s/AKfycbxj8ikIfp_wsqhWr1hYNZV1PEyYP0VRfnB3YjXZcAHie8SbhhiDbTE1Ra7Ss3RTmw6r/exec">
             <input class="contact__form__item" type="text" placeholder="your name" name="name" required />
             <input class="contact__form__item" type="text" placeholder="your email" name="email" required />
             <textarea class="contact__form__item contact__form__textarea" name="message" placeholder="Message" required></textarea>
             <button class="contact__form__item contact__form__button">send</button>
+            <p class="thankyou_message"></p>  
           </form>
         </div>
       </section>
     </section>
   </main>
+  <!-- Footer -->
   <footer id="footer" class="footer">
     <div class="footer__card">
       <svg class="logo__svg" viewBox="0 0 149 153">
